@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: rgb(197, 186, 186);
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .aside1 {
+            background-color: teal;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            z-index: 100;
+            height: auto;
+            padding: 10px 0;
+        }
+        
+        .aside1 nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+        }
+        
+        .aside1 nav ul li {
+            list-style: none;
+            margin: 5px 10px;
+        }
+        
+        .aside1 nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+        
+        .image {
+            width: 80px;
+            border-radius: 50%;
+            height: 80px;
+            margin: 10px auto;
+            display: block;
+        }
+        
+        .main-content {
+            padding: 20px;
+            margin-bottom: 100px;
+        }
+        
+        .hero {
+            width: 100%;
+            height: auto;
+            max-height: 80vh;
+            object-fit: cover;
+        }
+        
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h1, h2 {
+            color: teal;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .aboutme, .education, .skills, .interests, .projects {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .image2 {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            object-fit: cover;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        .project {
+            background-color: teal;
+            color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        .project img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        
+        footer {
+            background-color: rgb(36, 28, 28);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+        
+        
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+            
+            .aside1 {
+                width: 15%;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                bottom: auto;
+            }
+            
+            .aside1 nav ul {
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            
+            .aside1 nav ul li {
+                margin: 20px 0;
+                text-align: left;
+                padding-left: 20px;
+            }
+            
+            .main-content {
+                margin-left: 15%;
+                margin-bottom: 0;
+                width: 85%;
+            }
+            
+            .aboutme, .education {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            .aboutme > div, .education > div {
+                flex: 1;
+                padding: 0 20px;
+            }
+            
+            .projects {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            
+            .project {
+                width: 48%;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .project {
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="aside1">
+            <nav>
+                <img class="image" src="image.png" alt="my image">
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> HOME</a></li>
+                    <li><a href="#aboutme"><i class="fas fa-user"></i> ABOUT</a></li>
+                    <li><a href="#education"><i class="fas fa-graduation-cap"></i> EDUCATION</a></li>
+                    <li><a href="#skills"><i class="fas fa-cogs"></i> SKILLS</a></li>
+                    <li><a href="#interests"><i class="fas fa-heart"></i> INTERESTS</a></li>
+                    <li><a href="#projects"><i class="fas fa-project-diagram"></i> PROJECTS</a></li>
+                    <li><a href="contact.html"><i class="fas fa-project-diagram"></i> CONTACT</a></li>
+                    <li><a href="my cv.odt" download=""><img style="width: 30px; border-radius: 50%; " src="image copy 11.png" alt="Profile Image"> CV Download</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="main-content">
+            <div>
+                <img class="hero" src="https://www.springboard.com/blog/wp-content/uploads/2021/06/ways-ai-is-being-used-in-web-development.jpg" alt="Hero image">
+            </div>
+
+            <div class="section aboutme" id="aboutme">
+                <div>
+                    <h1>About me</h1>
+                    <p>Hello! I'm Britney Temu, and I have a deep passion for problem-solving and innovation. I thrive on tackling complex challenges, finding effective solutions, and breaking down obstacles into manageable parts. Helping people is incredibly important to me, whether through mentorship, volunteer work, or simply supporting friends and colleagues. I believe that teamwork is essential for success, and I enjoy being part of a collaborative environment where diverse perspectives lead to innovative ideas. With an insatiable curiosity, I embrace every opportunity to learn new things, whether it's exploring new technologies or acquiring fresh skills. Ultimately, my goal is to make a positive impact in the lives of others, using my skills and knowledge to contribute to their well-being. I look forward to connecting with like-minded individuals and exploring new opportunities that allow me to make a difference.</p>
+                    <h2><a href="my cv.odt" download="">View and Download My CV</a></h2>
+                </div>
+                <div>
+                    <img class="image2" src="image copy 7.png" alt="Profile image">
+                </div>
+            </div>
+
+            <div class="section education" id="education">
+                <div>
+                    <h1>Education</h1>
+                    <div>
+                        <h2><strong><em>PLP feb 2025 - March 2025</em></strong></h2>
+                        <p>An aspiring software engineer passionate about problem-solving and innovation. Thrives in collaborative environments, helping others while embracing new technologies. Committed to creating meaningful applications that positively impact users.</p>
+                    </div>
+
+                    <div>
+                        <h2><strong><em>Multimedia University Sept 2023 - March 2027</em></strong></h2>
+                        <p>Undertaking Bachelors Degree in Mathematics and Computer science. Passionate about analytical thinking and problem-solving. Enjoys collaborating with peers and exploring new technologies. Aims to leverage skills to create impactful solutions in the tech industry.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2><strong><em>Kolanya Girls School Jan 2019-Dec 2022</em></strong></h2>
+                        <p>I studied my secondary education and managed to score B plus grade.</p>
+                    </div>
+
+                    <div>
+                        <h2><strong><em>St Teresa's Girls Primary School jan 2011-oct 2018</em></strong></h2>
+                        <p>An aspiring software engineer passionate about problem-solving and innovation. Thrives in collaborative environments, helping others while embracing new technologies. Committed to creating meaningful applications that positively impact users.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section skills" id="skills">
+                <div>
+                    <h1>Skills</h1>
+                </div>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Programming Languages</th>
+                                <th>Tools</th>
+                                <th>Frameworks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Python</td>
+                                <td>GIT</td>
+                                <td>Django</td>
+                            </tr>
+                            <tr>
+                                <td>Java</td>
+                                <td>Linux</td>
+                                <td>Node js</td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>VS code</td>
+                                <td>Flask</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+         
+
+
+
+
+
+
+
+            <div class="section education" id="education">
+                <div>
+                    <h1>Interests</h1>
+                    <div>
+                        <h2><strong><em>Medical software</em></strong></h2>
+                        <p>Medical software includes applications like electronic health records and telemedicine that enhance healthcare delivery. These tools improve patient outcomes by streamlining data management and enabling remote consultations..</p>
+                    </div>
+
+                    <div>
+                        <h2><strong><em>Web development</em></strong></h2>
+                        <p>Web development focuses on creating and maintaining websites and applications, integrating design and functionality. It utilizes languages like HTML, CSS, and JavaScript for front-end development, while back-end technologies handle data processing and server management. This field emphasizes user experience and responsive design, ensuring accessibility across various devices.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2><strong><em>Climate Change</em></strong></h2>
+                        <p>Climate change, driven by human activities, leads to significant alterations in weather patterns and global temperatures. Urgent action is needed to mitigate its effects through renewable energy adoption and improved energy efficiency.</p>
+                    </div>
+
+                    <div>
+                        <h2><strong><em>Sustainable Energy</em></strong></h2>
+                        <p>Sustainable energy harnesses renewable resources like solar and wind power to reduce reliance on fossil fuels. This approach minimizes greenhouse gas emissions and promotes energy independence through innovative technologies.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="section projects" id="projects">
+                <h1 style="width: 100%;">Projects</h1>
+                <div class="project">
+                    <img src="image copy.png" alt="Personal Portfolio Website">
+                    <h2><strong><em>Personal Portfolio Website</em></strong></h2>
+                    <p>Create a responsive personal portfolio website to showcase your projects, skills, and experiences. Use HTML for the structure, CSS for styling, and JavaScript for interactive elements like smooth scrolling and a mobile menu. Include sections for your bio, project gallery, and contact form.</p>
+                </div>
+                
+                <div class="project">
+                    <img src="https://cdn.pixabay.com/photo/2021/11/22/20/20/online-6817350_640.jpg" alt="E-commerce Website">
+                    <h2><strong><em>E-commerce Website</em></strong></h2>
+                    <p>Create a prototype e-commerce site using Java for the backend, with servlets and JSP for dynamic content generation. Use HTML and CSS for the frontend design. Features include product listings, a shopping cart, and user authentication. Implement a basic checkout process to simulate transactions.</p>
+                </div>
+                
+                <div class="project">
+                    <img src="image copy 10.png" alt="Health App">
+                    <h2><strong><em>Health App</em></strong></h2>
+                    <p>Create a health tracker application using Python and Flask. Users can log their daily activities, meals, and exercise routines. Use HTML and CSS for the user interface, allowing users to view their progress over time with graphs and statistics generated from the data they input.</p>
+                </div>
+
+
+
+
+                <div class="project">
+                    <img src="https://cdn.pixabay.com/photo/2021/11/22/20/20/online-6817350_640.jpg" alt="E-commerce Website">
+                    <h2><strong><em>E-commerce Website</em></strong></h2>
+                    <p>Create a prototype e-commerce site using Java for the backend, with servlets and JSP for dynamic content generation. Use HTML and CSS for the frontend design. Features include product listings, a shopping cart, and user authentication. Implement a basic checkout process to simulate transactions.</p>
+                </div>
+
+
+                
+                <div class="project">
+                    <img src="image copy 9.png" alt="Inventory Management System">
+                    <h2><strong><em>Inventory Management System</em></strong></h2>
+                    <p>Developed a simple inventory management system using Java and MySQL to track product stock levels. Implemented basic CRUD (Create, Read, Update, Delete) operations to manage inventory. Designed a user-friendly interface with Java Swing for desktop applications.</p>
+                </div>
+                
+                <div class="project">
+                    <img src="image copy 8.png" alt="Blogging Platform">
+                    <h2><strong><em>Blogging Platform</em></strong></h2>
+                    <p>Developed simple blogging platform using Python and Django. Users can create accounts, write, edit, and delete posts. Use HTML and CSS for the frontend, ensuring a clean and user-friendly interface. Implement features like comment sections and user profiles.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            &copy; 2025 Britney . All Rights preserved
+        </div>
+    </footer>
+</body>
+</html>

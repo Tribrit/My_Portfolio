@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - My Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: rgb(197, 186, 186);
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: teal;
+            height: 60px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 60px; /* Space for fixed header */
+        }
+        
+        .aside {
+            background-color: teal;
+            width: 100%;
+            padding: 20px 0;
+            order: 2;
+        }
+        
+        .aside h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .social-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            width: 100px;
+        }
+        
+        .image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        
+        .content {
+            padding: 20px;
+            order: 1;
+        }
+        
+        .hero {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin: 20px 0;
+            color: teal;
+        }
+        
+        .forms {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        label {
+            display: block;
+            margin-top: 15px;
+            color: #333;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: teal;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: darkcyan;
+        }
+        
+        footer {
+            background-color: rgb(36, 28, 28);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+        }
+        
+       
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+                min-height: calc(100vh - 60px);
+            }
+            
+            .aside {
+                width: 25%;
+                height: calc(100vh - 60px);
+                position: fixed;
+                padding-top: 40px;
+                order: 1;
+            }
+            
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+            
+            .content {
+                margin-left: 25%;
+                width: 75%;
+                order: 2;
+                padding: 40px;
+            }
+            
+            .hero {
+                max-height: 700px;
+            }
+            
+            button {
+                width: auto;
+                padding: 12px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+    </header>
+
+    <div class="container">
+        <aside class="aside">
+            <h1>Let's Connect</h1>
+            <div class="social-links">
+                <a href="https://github.com/Tribrit" target="_blank" class="social-link">
+                    <img class="image" src="image.png" alt="GitHub">
+                    <span>GitHub</span>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/britney-trizer-081389277/" target="_blank" class="social-link">
+                    <img class="image" src="image copy 2.png" alt="LinkedIn">
+                    <span>LinkedIn</span>
+                </a>
+                
+                <a href="https://wa.me/25414186215" target="_blank" class="social-link">
+                    <img class="image" src="image copy 3.png" alt="WhatsApp">
+                    <span>WhatsApp</span>
+                </a>
+                
+                <a href="mailto:trizerbritney@gmail.com" class="social-link">
+                    <img class="image" src="image copy 4.png" alt="Email">
+                    <span>Email</span>
+                </a>
+            </div>
+        </aside>
+
+        <div class="content">
+            <img class="hero" src="https://www.springboard.com/blog/wp-content/uploads/2021/06/ways-ai-is-being-used-in-web-development.jpg" alt="Contact Me">
+            <h1>Fill This Form</h1>
+            <div class="forms">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter Email" required>
+                    
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="Enter Number">
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Type your message here" required rows="5"></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Britney. All Rights Reserved.
+    </footer>
+</body>
+</html>
