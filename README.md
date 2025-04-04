@@ -1,89 +1,66 @@
-Britney Temu - Software Engineer Portfolio 👩‍💻
-Welcome to my personal portfolio! I am Britney Temu, an aspiring software engineer based in Nairobi, Kenya. This portfolio highlights my journey, projects, and skills as I work towards becoming a software development professional. Feel free to explore and contact me if you would like to collaborate or discuss opportunities!
+ <My Portfolio
 
-🚀 About Me
-I am a Software Engineering enthusiast currently pursuing a Bachelor of Science in Mathematics and Computer Science at Multimedia University. My journey into software development started with a passion for problem-solving and technology, which has grown stronger as I continue to learn and develop my skills.
+Welcome to my portfolio! This project highlights my background education,skills,intrests and projects that have worked on.
 
-I am eager to leverage my programming, problem-solving, and communication skills in a professional setting, and I'm looking for internship opportunities to gain hands-on experience in the field.
+ <Table of Contents
+  
+ Introduction
+ Technologies Used
+ Environment
+ Features
+ Installation
+ How_to_use
+ Contact
 
-🎓 Education
-Bachelor of Science in Mathematics and Computer Science
-Multimedia University — Nairobi, Kenya
-Expected Graduation: March 2027
-Relevant Coursework: Data Structures, Algorithms, Web Development, Database Management, Software Testing, Mobile App Development
-GPA: 65 (Aggregate Points)
+ <Introduction
 
-Secondary Education
-Sa. Kolanya Girls School — Busia, Kenya
-Grade: B Plain (69 Points)
+This portfolio is designed to show case what i have been able to learn in plp so far in my journey as a beginerr software engineer. It includes sections about my background, skills, education, interests, and various projects I've worked on and currently working on.Solving problems and learning new things is my major goal.
 
-Primary Education
-St. Teresa’s Girls Primary School
-Grade: 389 Marks
+<Technologies Used
 
-🛠 Skills
-Programming Languages: Python, Java, JavaScript, HTML, CSS
+  HTML5 Structure of the web pages.
+  CSS ; Styling and layout of the pages.## 
+  JavaScript: Interactive elements and dynamic content.
+  Font Awesome: Icons for navigation and visual appeal.
+ 
+<Environment
 
-Frameworks and Tools: Django, Node.js, Git, Visual Studio Code
+The development environment for this portfolio includes:
 
-Databases: MySQL, MongoDB
+Operating System :  any OS with a modern browser
+Text Editor: Visual Studio Code or any preferred code editor.
+Web Browser: Google Chrome or any other browser  for viewing the portfolio.
+Version Control: Git for managing changes and collaboration.
 
-Soft Skills: Problem-solving,communication, Team Collaborations.
+<Features
 
-💻 Projects
-Personal Portfolio Website
-Description: Developed a responsive portfolio website to showcase my projects and skills using HTML, CSS, and JavaScript.
+  For navigation I have used the side bar combinde it  with links to different sections of the portfolio
+  Responsive Design: The portfolio adapts to various screen sizes, providing a seamless experience on both desktop and mobile devices.
+  Used descriptions that are detailed for my projects stating its main function and how is is used
+  Downloadable cv;where when one wishes to know more about me can download for more details
 
-Features:
+<Installation
 
-Contact form for inquiries
+To run the portfolio locally:
 
-Project gallery to display my work
+ Clone the repository:
+   git clone https://github.com/Tribrit/My_Portfolio.git
+   cd My_Portfolio
+   Open the HTML file:
 
-Fully responsive design for desktop and mobile devices
+Open index.html in your web browser.
+<How_to_use
+  Navigate through different sections using the sidebar on the left  provided on the screen for big screens and for phones the bar is at the bottom of the screen.
+  Click on the contact me icons to contact me directly from my portfolio.
+  Download my CV for more detailed information about my qualifications.
+<Contact
 
-Technologies Used: HTML, CSS, JavaScript
+   For reviews,inquiries or collaborations, feel free to reach out via:
 
-
-Inventory Management
-Created a prototype e-commerce site using Java for the backend, using java programs that run on java server search as servlets and java serve pages that extend web capabilities for dynamic content generation. Use HTML and CSS for the frontend design. Features include product listings, a shopping cart, and user authentication. Implement a basic checkout process to simulate the transactions.
-💼 Work Experience
-Salesperson - Unilever
-Nairobi, Kenya
-November 2024 – November 2025
-
-Developed strong customer service and communication skills while managing tasks in a fast-paced environment.
-
-Assisted in maintaining product knowledge and providing recommendations to customers.
-
-Enhanced teamwork skills through collaboration with colleagues in a dynamic retail setting.
-
-🌍 Extracurricular Activities
-Member, Computer Science Club
-Multimedia University
-
-Actively participated in workshops and hackathons, where I further developed my coding skills.
-
-Collaborated with peers on various software development projects, contributing to both team success and personal growth.
-
-Volunteer, Local Community Center
-Assisted in teaching basic computer skills to community members, fostering a love for technology and encouraging digital literacy.
-
-📜 Certifications
-Certification in Software Engineering — Power Learn Project (2025)
-
-Graphic Design for AI — Ajira (2024)
-
-📬 Contact Me
-Feel free to reach out to me for any inquiries, collaborations, or just a friendly chat about software development!
-
-Email: trizerbritney@gmail.com
-
-Phone: +254708278155
-
-LinkedIn: https://www.linkedin.com/in/britney-trizer-081389277/
-GitHub: https://github.com/Tribrit
-
-
-Thank you for visiting my portfolio! I am excited about the journey ahead and look forward to growing and learning in the field of software engineering.
-
+   Email:trizerbritney@gmail.com
+   LinkedIn: https://www.linkedin.com/in/britney-trizer-081389277
+   GitHub: https://github.com/Tribrit
+        
+                  !!Thank you!!
+       
+                    &copy 2025 Britney. All Rights Reserved.
